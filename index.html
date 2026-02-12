@@ -18,8 +18,8 @@
         
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
-            /* ⭐⭐ ТОЛЬКО ФОН ПОМЕНЯЛ ⭐⭐ */
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+            /* ⭐⭐ ВАШЕ ФОТО ⭐⭐ */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                         url('https://i.pinimg.com/736x/75/e7/69/75e7695632ee2d2342d523e47096bd65.jpg');
             background-size: cover;
             background-position: center;
@@ -33,130 +33,151 @@
             -webkit-text-size-adjust: 100%;
         }
         
-        /* ⭐⭐ ВСЁ ОСТАЛЬНОЕ - ПОЛНОСТЬЮ КАК БЫЛО ⭐⭐ */
+        /* ⭐⭐ КАРТОЧКА - МИНИМАЛИЗМ ⭐⭐ */
         .card {
             max-width: 650px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: white;
             padding: 50px 40px;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid #f0f0f0;
+            /* Убрал: border-radius, backdrop-filter, box-shadow */
         }
         
         .invite-label {
-            font-size: 0.85rem;
-            letter-spacing: 5px;
-            color: #d4af37;
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            color: #8a8a8a;
             margin-bottom: 25px;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 400;
+            font-family: 'Arial', sans-serif;
         }
         
         .names {
             font-size: 3.2rem;
             font-weight: 400;
-            color: #2c3e4f;
+            color: #1e1e1e;
             line-height: 1.2;
             margin-bottom: 15px;
             word-wrap: break-word;
+            letter-spacing: 2px;
         }
         
         .and {
             font-size: 2rem;
-            color: #d4af37;
+            color: #b5a37e;
             margin: 0 10px;
         }
         
         .date {
-            font-size: 1.8rem;
-            color: #d4af37;
+            font-size: 1.6rem;
+            color: #b5a37e;
             font-weight: 300;
             margin: 25px 0 20px;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
         
         .location {
             margin: 30px 0;
-            padding: 20px;
-            background: rgba(212, 175, 55, 0.05);
-            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid #f0f0f0;
+            background: transparent;
+            /* Убрал: border-radius, background-color */
         }
         
         .venue {
             font-size: 1.5rem;
-            font-weight: 500;
-            color: #2c3e4f;
+            font-weight: 400;
+            color: #1e1e1e;
             margin-bottom: 8px;
+            letter-spacing: 1px;
         }
         
         .address {
-            color: #5d6d7e;
+            color: #6a6a6a;
             font-size: 1rem;
             margin-bottom: 8px;
         }
         
         .time {
-            color: #d4af37;
-            font-size: 1.2rem;
+            color: #b5a37e;
+            font-size: 1rem;
             margin-top: 10px;
-            font-weight: 500;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
         .divider {
-            width: 60px;
-            height: 2px;
-            background: #d4af37;
+            width: 40px;
+            height: 1px;
+            background: #b5a37e;
             margin: 35px auto;
+            border: none;
         }
         
-        .rsvp-text {
-            color: #5d6d7e;
+        .quote {
+            font-style: italic;
+            color: #6a6a6a;
             margin-bottom: 25px;
             font-size: 1rem;
         }
         
+        .rsvp-text {
+            color: #8a8a8a;
+            margin-bottom: 25px;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: 'Arial', sans-serif;
+        }
+        
         .phone-btn {
             display: inline-block;
-            background: #d4af37;
-            color: white;
-            padding: 16px 45px;
+            background: transparent;
+            color: #1e1e1e;
+            padding: 14px 45px;
             text-decoration: none;
-            border-radius: 50px;
-            letter-spacing: 2px;
-            font-size: 1rem;
-            transition: all 0.3s;
-            box-shadow: 0 10px 20px rgba(212,175,55,0.2);
+            border: 1px solid #1e1e1e;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            /* Убрал: border-radius, box-shadow, gradient */
         }
         
         .phone-btn:hover {
-            background: #c4a032;
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(212,175,55,0.3);
+            background: #1e1e1e;
+            color: white;
+            border-color: #1e1e1e;
+            transform: none;
+            box-shadow: none;
         }
         
         .contact-person {
             margin-top: 25px;
             font-size: 0.9rem;
-            color: #95a5a6;
+            color: #8a8a8a;
         }
         
         .city {
             margin-top: 30px;
-            color: #d4af37;
-            font-size: 0.9rem;
+            color: #b5a37e;
+            font-size: 0.8rem;
             letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Arial', sans-serif;
         }
         
-        /* Адаптивность */
+        /* ⭐⭐ АДАПТИВНОСТЬ - БЕЗ ИЗМЕНЕНИЙ ⭐⭐ */
         @media (max-width: 768px) {
             html { font-size: 15px; }
             .card { padding: 40px 25px; }
             .names { font-size: 2.5rem; }
             .and { font-size: 1.8rem; }
-            .date { font-size: 1.5rem; }
+            .date { font-size: 1.4rem; }
             .venue { font-size: 1.3rem; }
         }
         
@@ -165,7 +186,7 @@
             .card { padding: 35px 20px; }
             .names { font-size: 2rem; }
             .and { font-size: 1.5rem; }
-            .date { font-size: 1.3rem; }
+            .date { font-size: 1.2rem; }
             .venue { font-size: 1.2rem; }
             .phone-btn { 
                 padding: 14px 35px; 
@@ -175,6 +196,7 @@
         
         @media (max-width: 360px) {
             html { font-size: 13px; }
+            .card { padding: 30px 20px; }
             .names { font-size: 1.8rem; }
         }
         
@@ -202,14 +224,14 @@
         
         <div class="divider"></div>
         
-        <div style="font-style: italic; color: #5d6d7e; margin-bottom: 25px;">
+        <div class="quote">
             «Разделите с нами радость этого дня»
         </div>
         
         <div class="rsvp-text">Пожалуйста, подтвердите свое присутствие</div>
         
         <a href="tel:+77771234567" class="phone-btn">
-            <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> ПОЗВОНИТЬ
+            <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> ПОЗВОНИТЬ
         </a>
         
         <div class="contact-person">
