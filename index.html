@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>Айбек & Айгерим | Свадебное приглашение</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -14,11 +14,11 @@
         
         html {
             font-size: 16px;
+            -webkit-tap-highlight-color: transparent;
         }
         
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
-            /* ⭐⭐ ВАШЕ ФОТО ⭐⭐ */
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                         url('https://i.pinimg.com/736x/75/e7/69/75e7695632ee2d2342d523e47096bd65.jpg');
             background-size: cover;
@@ -33,7 +33,6 @@
             -webkit-text-size-adjust: 100%;
         }
         
-        /* ⭐⭐ КАРТОЧКА - МИНИМАЛИЗМ ⭐⭐ */
         .card {
             max-width: 650px;
             width: 100%;
@@ -41,7 +40,6 @@
             padding: 50px 40px;
             text-align: center;
             border: 1px solid #f0f0f0;
-            /* Убрал: border-radius, backdrop-filter, box-shadow */
         }
         
         .invite-label {
@@ -54,20 +52,31 @@
             font-family: 'Arial', sans-serif;
         }
         
+        /* ⭐⭐⭐ ПОЛНОСТЬЮ АДАПТИВНЫЕ ИМЕНА ⭐⭐⭐ */
         .names {
             font-size: 3.2rem;
             font-weight: 400;
             color: #1e1e1e;
             line-height: 1.2;
             margin-bottom: 15px;
-            word-wrap: break-word;
             letter-spacing: 2px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .name-part {
+            display: inline-block;
+            white-space: nowrap;
         }
         
         .and {
             font-size: 2rem;
             color: #b5a37e;
-            margin: 0 10px;
+            display: inline-block;
+            white-space: nowrap;
         }
         
         .date {
@@ -83,7 +92,6 @@
             padding: 25px;
             border: 1px solid #f0f0f0;
             background: transparent;
-            /* Убрал: border-radius, background-color */
         }
         
         .venue {
@@ -145,15 +153,12 @@
             transition: all 0.2s;
             font-family: 'Arial', sans-serif;
             text-transform: uppercase;
-            /* Убрал: border-radius, box-shadow, gradient */
         }
         
         .phone-btn:hover {
             background: #1e1e1e;
             color: white;
             border-color: #1e1e1e;
-            transform: none;
-            box-shadow: none;
         }
         
         .contact-person {
@@ -171,23 +176,57 @@
             font-family: 'Arial', sans-serif;
         }
         
-        /* ⭐⭐ АДАПТИВНОСТЬ - БЕЗ ИЗМЕНЕНИЙ ⭐⭐ */
+        /* ⭐⭐⭐ УЛУЧШЕННАЯ АДАПТИВНОСТЬ ДЛЯ ТЕЛЕФОНОВ ⭐⭐⭐ */
         @media (max-width: 768px) {
             html { font-size: 15px; }
-            .card { padding: 40px 25px; }
-            .names { font-size: 2.5rem; }
+            .card { padding: 40px 30px; }
+            
+            .names {
+                font-size: 2.8rem;
+                gap: 5px;
+            }
             .and { font-size: 1.8rem; }
             .date { font-size: 1.4rem; }
             .venue { font-size: 1.3rem; }
         }
         
+        @media (max-width: 600px) {
+            .names {
+                font-size: 2.4rem;
+                flex-direction: column;
+                gap: 0;
+            }
+            .name-part {
+                white-space: normal;
+                display: block;
+                width: 100%;
+            }
+            .and {
+                display: block;
+                width: 100%;
+                font-size: 1.8rem;
+                margin: 5px 0;
+            }
+        }
+        
         @media (max-width: 480px) {
             html { font-size: 14px; }
-            .card { padding: 35px 20px; }
-            .names { font-size: 2rem; }
-            .and { font-size: 1.5rem; }
-            .date { font-size: 1.2rem; }
-            .venue { font-size: 1.2rem; }
+            .card { padding: 35px 25px; }
+            
+            .names {
+                font-size: 2.2rem;
+            }
+            .and { 
+                font-size: 1.6rem;
+                margin: 3px 0;
+            }
+            .date { 
+                font-size: 1.2rem; 
+                letter-spacing: 2px;
+            }
+            .venue { 
+                font-size: 1.2rem; 
+            }
             .phone-btn { 
                 padding: 14px 35px; 
                 width: 100%;
@@ -197,7 +236,27 @@
         @media (max-width: 360px) {
             html { font-size: 13px; }
             .card { padding: 30px 20px; }
-            .names { font-size: 1.8rem; }
+            
+            .names {
+                font-size: 1.9rem;
+            }
+            .and {
+                font-size: 1.4rem;
+            }
+            .date {
+                font-size: 1.1rem;
+            }
+        }
+        
+        /* ⭐⭐ ОЧЕНЬ МАЛЕНЬКИЕ ТЕЛЕФОНЫ ⭐⭐ */
+        @media (max-width: 320px) {
+            html { font-size: 12px; }
+            .names {
+                font-size: 1.7rem;
+            }
+            .and {
+                font-size: 1.3rem;
+            }
         }
         
         h1, h2, h3, p, div, span, a {
@@ -210,8 +269,11 @@
     <div class="card">
         <div class="invite-label">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
         
+        <!-- ⭐⭐ ПОЛНОСТЬЮ АДАПТИВНЫЕ ИМЕНА ⭐⭐ -->
         <h1 class="names">
-            АЙБЕК <span class="and">&</span> АЙГЕРИМ
+            <span class="name-part">АЙБЕК</span>
+            <span class="and">&</span>
+            <span class="name-part">АЙГЕРИМ</span>
         </h1>
         
         <div class="date">26 ИЮНЯ 2026</div>
