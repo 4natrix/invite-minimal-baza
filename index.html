@@ -3,128 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Айбек & Айгерим | Үйлену той</title>
+    <title>Айбек & Айгерим | Свадебное приглашение</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
         body {
             font-family: 'Arial', sans-serif;
-            background: #fefefe;
+            background: #fffcf9;
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             padding: 20px;
         }
+        
         .card {
             max-width: 600px;
             width: 100%;
             background: white;
             padding: 50px 40px;
-            border: 1px solid #eaeaea;
+            border: 1px solid #f0e7e0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.02);
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
         }
-        .title {
-            font-size: 0.9rem;
+        
+        .invite-label {
+            font-size: 0.85rem;
             letter-spacing: 4px;
             color: #b38b5f;
             margin-bottom: 30px;
             text-transform: uppercase;
         }
+        
         .names {
-            font-size: 3rem;
+            font-size: 3.2rem;
             font-weight: 300;
+            color: #2c3e4f;
+            line-height: 1.2;
             margin-bottom: 10px;
-            color: #2c3e50;
         }
+        
         .and {
             font-size: 2rem;
             color: #b38b5f;
             margin: 0 15px;
         }
+        
         .date {
-            font-size: 1.6rem;
-            font-weight: 300;
+            font-size: 1.8rem;
             color: #b38b5f;
+            font-weight: 300;
             margin: 25px 0 15px;
             letter-spacing: 2px;
         }
+        
         .location {
-            margin: 20px 0;
-            font-size: 1.1rem;
-            color: #34495e;
+            margin: 25px 0;
         }
-        .restaurant {
-            font-size: 1.3rem;
+        
+        .venue {
+            font-size: 1.4rem;
             font-weight: 400;
+            color: #2c3e4f;
             margin-bottom: 5px;
-            color: #2c3e50;
         }
+        
+        .address {
+            color: #5d6d7e;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .time {
+            color: #b38b5f;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+        
         .divider {
             width: 50px;
             height: 1px;
             background: #b38b5f;
-            margin: 30px auto;
+            margin: 35px auto;
         }
-        .contact {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px dashed #ddd;
+        
+        .rsvp {
+            margin-top: 20px;
         }
-        .phone {
+        
+        .rsvp-text {
+            color: #5d6d7e;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .phone-btn {
             display: inline-block;
             background: #b38b5f;
             color: white;
-            padding: 12px 35px;
+            padding: 14px 40px;
             text-decoration: none;
             border-radius: 3px;
             letter-spacing: 2px;
             font-size: 0.9rem;
-            margin-top: 15px;
+            transition: background 0.3s;
         }
-        .city {
-            color: #7f8c8d;
-            font-size: 0.9rem;
+        
+        .phone-btn:hover {
+            background: #9a764f;
+        }
+        
+        .contact-person {
             margin-top: 25px;
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+        
+        .city {
+            margin-top: 30px;
+            color: #b38b5f;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="title">ҚҰТТЫ ШАҢЫРАҚ</div>
+        <div class="invite-label">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
         
         <h1 class="names">
             АЙБЕК <span class="and">&</span> АЙГЕРИМ
         </h1>
         
-        <div class="date">25 МАУСЫМ 2025</div>
+        <div class="date">25 ИЮНЯ 2025</div>
         
         <div class="location">
-            <div class="restaurant">ДӘСТҮРЛІК</div>
-            <p style="margin-top: 10px;">Нұр-Сұлтан, Тәуелсіздік даңғылы, 15</p>
-            <p style="color: #b38b5f; margin-top: 10px;">САҒАТ 18:00</p>
+            <div class="venue">РЕСТОРАН «ДӘСТҮРЛІК»</div>
+            <div class="address">г. Астана, пр. Тауелсиздик, 15</div>
+            <div class="time">НАЧАЛО В 18:00</div>
         </div>
         
         <div class="divider"></div>
         
         <div style="font-style: italic; color: #5d6d7e;">
-            "Бірге тамаша күнді бөлісейік"
+            «Разделите с нами радость этого дня»
         </div>
         
-        <div class="contact">
-            <p style="color: #666;">Қатысуыңызды растаңыз</p>
-            <a href="tel:+77771234567" class="phone">📞 ҚОҢЫРАУ ШАЛУ</a>
-            <p style="margin-top: 20px; font-size: 0.8rem; color: #999;">
-                Айгүл (ұйымдастырушы): +7 (777) 123-45-67
-            </p>
+        <div class="rsvp">
+            <div class="rsvp-text">Пожалуйста, подтвердите свое присутствие</div>
+            <a href="tel:+77771234567" class="phone-btn">📞 ПОЗВОНИТЬ</a>
+            <div class="contact-person">
+                Айгуль (организатор): +7 (777) 123-45-67
+            </div>
         </div>
         
         <div class="city">
-            Астана қаласы
+            АСТАНА • 2025
         </div>
     </div>
 </body>
