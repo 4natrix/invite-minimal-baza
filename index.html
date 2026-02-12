@@ -2,12 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Айбек & Айгерим | Свадебное приглашение</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
-        /* ⭐⭐⭐ ПОЛНЫЙ МИНИМАЛИЗМ ⭐⭐⭐ */
         * {
             margin: 0;
             padding: 0;
@@ -16,17 +14,15 @@
         
         html {
             font-size: 16px;
-            -webkit-tap-highlight-color: transparent;
         }
         
         body {
-            /* ⭐⭐ ОБЫЧНЫЙ ШРИФТ - без изменений ⭐⭐ */
             font-family: 'Georgia', 'Times New Roman', serif;
-            /* ⭐⭐ ВАШЕ ФОТО + ЧЕРНЫЙ ОВЕРЛЕЙ ⭐⭐ */
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            /* ⭐⭐ ТОЛЬКО ФОН ПОМЕНЯЛ ⭐⭐ */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                         url('https://i.pinimg.com/736x/75/e7/69/75e7695632ee2d2342d523e47096bd65.jpg');
             background-size: cover;
-            background-position: center 40%;
+            background-position: center;
             background-attachment: fixed;
             min-height: 100vh;
             display: flex;
@@ -35,178 +31,151 @@
             padding: 20px;
             width: 100%;
             -webkit-text-size-adjust: 100%;
-            position: relative;
         }
         
-        /* ⭐⭐ КАРТОЧКА - МИНИМАЛИЗМ (никаких скруглений, теней, блюра) ⭐⭐ */
+        /* ⭐⭐ ВСЁ ОСТАЛЬНОЕ - ПОЛНОСТЬЮ КАК БЫЛО ⭐⭐ */
         .card {
             max-width: 650px;
             width: 100%;
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             padding: 50px 40px;
-            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 30px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
             text-align: center;
-            position: relative;
-            z-index: 2;
-            box-shadow: none;
-            border-radius: 0; /* Убрал скругление */
-            backdrop-filter: none; /* Убрал блюр */
+            border: 1px solid rgba(255,255,255,0.3);
         }
         
         .invite-label {
-            font-size: 0.7rem;
-            letter-spacing: 4px;
-            color: #b5a37e; /* Приглушенное золото */
+            font-size: 0.85rem;
+            letter-spacing: 5px;
+            color: #d4af37;
             margin-bottom: 25px;
             text-transform: uppercase;
-            font-weight: 400;
-            font-family: 'Arial', sans-serif;
+            font-weight: 500;
         }
         
         .names {
             font-size: 3.2rem;
             font-weight: 400;
-            color: white;
+            color: #2c3e4f;
             line-height: 1.2;
             margin-bottom: 15px;
             word-wrap: break-word;
-            letter-spacing: 2px;
-            text-shadow: none;
         }
         
         .and {
             font-size: 2rem;
-            color: #b5a37e; /* Приглушенное золото */
+            color: #d4af37;
             margin: 0 10px;
         }
         
         .date {
-            font-size: 1.5rem;
-            color: #b5a37e;
+            font-size: 1.8rem;
+            color: #d4af37;
             font-weight: 300;
             margin: 25px 0 20px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
         
         .location {
             margin: 30px 0;
             padding: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: transparent; /* Убрал фон */
-            border-radius: 0; /* Убрал скругление */
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 20px;
         }
         
         .venue {
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: white;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #2c3e4f;
             margin-bottom: 8px;
-            letter-spacing: 1px;
         }
         
         .address {
-            color: rgba(255,255,255,0.7);
+            color: #5d6d7e;
             font-size: 1rem;
             margin-bottom: 8px;
         }
         
         .time {
-            color: #b5a37e;
-            font-size: 1rem;
+            color: #d4af37;
+            font-size: 1.2rem;
             margin-top: 10px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-weight: 500;
         }
         
         .divider {
-            width: 40px; /* Тоньше */
-            height: 1px; /* Тоньше */
-            background: #b5a37e;
+            width: 60px;
+            height: 2px;
+            background: #d4af37;
             margin: 35px auto;
-            border: none;
-        }
-        
-        .quote {
-            font-style: italic;
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 25px;
-            font-size: 1rem;
         }
         
         .rsvp-text {
-            color: rgba(255,255,255,0.6);
+            color: #5d6d7e;
             margin-bottom: 25px;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
         }
         
         .phone-btn {
             display: inline-block;
-            background: transparent;
+            background: #d4af37;
             color: white;
-            padding: 14px 45px;
+            padding: 16px 45px;
             text-decoration: none;
-            border: 1px solid rgba(255,255,255,0.3);
-            letter-spacing: 3px;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-            font-family: 'Arial', sans-serif;
-            text-transform: uppercase;
-            border-radius: 0; /* Убрал скругление */
-            box-shadow: none; /* Убрал тень */
+            border-radius: 50px;
+            letter-spacing: 2px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 20px rgba(212,175,55,0.2);
         }
         
         .phone-btn:hover {
-            background: white;
-            color: #1e1e1e;
-            border-color: white;
+            background: #c4a032;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(212,175,55,0.3);
         }
         
         .contact-person {
             margin-top: 25px;
             font-size: 0.9rem;
-            color: rgba(255,255,255,0.6);
+            color: #95a5a6;
         }
         
         .city {
             margin-top: 30px;
-            color: #b5a37e;
-            font-size: 0.8rem;
+            color: #d4af37;
+            font-size: 0.9rem;
             letter-spacing: 3px;
-            text-transform: uppercase;
-            font-family: 'Arial', sans-serif;
         }
         
-        /* ⭐⭐⭐ АДАПТИВНОСТЬ - МИНИМАЛИЗМ ⭐⭐⭐ */
+        /* Адаптивность */
         @media (max-width: 768px) {
             html { font-size: 15px; }
-            .card { padding: 40px 30px; }
-            .names { font-size: 2.8rem; }
+            .card { padding: 40px 25px; }
+            .names { font-size: 2.5rem; }
             .and { font-size: 1.8rem; }
-            .date { font-size: 1.4rem; }
+            .date { font-size: 1.5rem; }
             .venue { font-size: 1.3rem; }
         }
         
         @media (max-width: 480px) {
             html { font-size: 14px; }
-            .card { padding: 35px 25px; }
-            .names { font-size: 2.2rem; }
+            .card { padding: 35px 20px; }
+            .names { font-size: 2rem; }
             .and { font-size: 1.5rem; }
             .date { font-size: 1.3rem; }
             .venue { font-size: 1.2rem; }
             .phone-btn { 
+                padding: 14px 35px; 
                 width: 100%;
-                padding: 14px 30px;
             }
         }
         
         @media (max-width: 360px) {
             html { font-size: 13px; }
-            .card { padding: 30px 20px; }
-            .names { font-size: 2rem; }
+            .names { font-size: 1.8rem; }
         }
         
         h1, h2, h3, p, div, span, a {
@@ -216,7 +185,6 @@
     </style>
 </head>
 <body>
-    <!-- ⭐⭐ КАРТОЧКА - МИНИМАЛИЗМ ⭐⭐ -->
     <div class="card">
         <div class="invite-label">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
         
@@ -234,14 +202,14 @@
         
         <div class="divider"></div>
         
-        <div class="quote">
+        <div style="font-style: italic; color: #5d6d7e; margin-bottom: 25px;">
             «Разделите с нами радость этого дня»
         </div>
         
-        <div class="rsvp-text">Подтвердите присутствие</div>
+        <div class="rsvp-text">Пожалуйста, подтвердите свое присутствие</div>
         
         <a href="tel:+77771234567" class="phone-btn">
-            <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> ПОЗВОНИТЬ
+            <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> ПОЗВОНИТЬ
         </a>
         
         <div class="contact-person">
