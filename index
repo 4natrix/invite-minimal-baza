@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван & Мария | Свадебное приглашение</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .invitation-card {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 40px 30px;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+            text-align: center;
+        }
+        
+        .border-line {
+            width: 60px;
+            height: 2px;
+            background: #d4af37;
+            margin: 25px auto;
+        }
+        
+        .names {
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        
+        .date {
+            font-size: 1.3rem;
+            color: #d4af37;
+            margin: 20px 0;
+            font-weight: 400;
+        }
+        
+        .location {
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .rsvp {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px dashed #ddd;
+            font-size: 0.95rem;
+            color: #888;
+        }
+        
+        .phone {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background: #d4af37;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        @media (max-width: 480px) {
+            .names { font-size: 2rem; }
+            .invitation-card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <div style="font-size: 0.9rem; color: #d4af37; margin-bottom: 20px; letter-spacing: 3px;">
+            SAVE THE DATE
+        </div>
+        
+        <h1 class="names">
+            ИВАН <br> & <br> МАРИЯ
+        </h1>
+        
+        <div class="border-line"></div>
+        
+        <div class="date">
+            25 ЯНВАРЯ 2025
+        </div>
+        
+        <div class="location">
+            <p style="font-size: 1.1rem; margin-bottom: 5px;">РЕСТОРАН "САЛТАНАТ"</p>
+            <p style="color: #999; font-size: 0.95rem;">г. Москва, ул. Тверская, д. 10</p>
+            <p style="margin-top: 15px; color: #d4af37; font-size: 1rem;">НАЧАЛО В 18:00</p>
+        </div>
+        
+        <div class="border-line" style="width: 40px;"></div>
+        
+        <div class="rsvp">
+            <p style="margin-bottom: 15px;">Пожалуйста, подтвердите ваше присутствие</p>
+            <a href="tel:+79991234567" class="phone">📞 ПОЗВОНИТЬ</a>
+            <p style="margin-top: 25px; font-size: 0.8rem; color: #aaa;">
+                Анна (организатор): +7 (999) 123-45-67
+            </p>
+        </div>
+        
+        <div style="margin-top: 30px; font-size: 0.7rem; color: #ccc; text-transform: uppercase;">
+            С ЛЮБОВЬЮ, ИВАН И МАРИЯ
+        </div>
+    </div>
+</body>
+</html>
